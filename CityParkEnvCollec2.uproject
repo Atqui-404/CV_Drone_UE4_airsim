@@ -17,10 +17,6 @@
 		{
 			"Name": "AirSim",
 			"Enabled": true
-		},
-		{
-			"Name": "EditorScriptingUtilities",
-			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
