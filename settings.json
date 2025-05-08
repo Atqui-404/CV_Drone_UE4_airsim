@@ -11,19 +11,6 @@
     "pitch": 30
 },
 
- "ViewModeSettings": {
-    "FlyWithMeSettings": {
-      "FollowDistance": -10,
-      "FollowMode": "LockStep",
-      "PositionOffset": {
-        "X": 0.0,
-        "Y": 3.0,
-        "Z": -2.0
-      },
-      "SmoothingFactor": 0.0
-    }
-  },
-
   "Vehicles": {
       "PX4": {
           "VehicleType": "PX4Multirotor",
