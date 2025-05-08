@@ -1,0 +1,48 @@
+{
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor",
+  "ClockType": "SteppableClock",
+  "PawnPaths":{
+    "DefaultQuadrotor": {"PawnBP": "Class'/Airsim/Blueprints/BP_MyPawn.BP_MyPawn_C'"}
+  },
+  "CameraDirector": {
+    "FollowDistance": -15,
+    "Z": 2,
+    "pitch": 30
+},
+
+ "ViewModeSettings": {
+    "FlyWithMeSettings": {
+      "FollowDistance": -10,
+      "FollowMode": "LockStep",
+      "PositionOffset": {
+        "X": 0.0,
+        "Y": 3.0,
+        "Z": -2.0
+      },
+      "SmoothingFactor": 0.0
+    }
+  },
+
+  "Vehicles": {
+      "PX4": {
+          "VehicleType": "PX4Multirotor",
+          "UseSerial": false,
+          "Lockstep": true,
+          "UseTcp": true,
+          "QgcHostIp": "",
+          "TcpPort": 4560,
+          "ControlIp": "192.168.26.241", 
+          "UdpPort": 14580,
+          "LocalHostIp": "192.168.16.1",
+          "Sensors":{
+              "barometer":{
+                  "SensorType": 1,
+                  "Enabled": true,
+                  "PressureFactorSigma": 0.0001825
+              }
+          }
+         
+      }
+  }
+}
