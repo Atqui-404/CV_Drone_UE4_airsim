@@ -31,7 +31,7 @@ Ensure that you've downloaded Unreal 4.27
     //Equivalent to enabling Custom Stencil in Project > Settings > Rendering > Postprocessing
     UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), FString("r.CustomDepth 3"));
 ```
-and add the following code below:
+   and add the following code below:
 ```
     //set up for better resolution
     UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), FString("t.MaxFPS 80"));
