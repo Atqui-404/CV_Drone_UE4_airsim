@@ -26,3 +26,19 @@ Ensure that you've downloaded Unreal 4.27
     "DefaultQuadrotor": {"PawnBP": "Class'/Airsim/Blueprints/BP_MyPawn.BP_MyPawn_C'"}
   },
 ```
+3. To increase resolution, after opening the .sln folder, open SimHUD.cpp and go to line 196
+```
+    //Equivalent to enabling Custom Stencil in Project > Settings > Rendering > Postprocessing
+    UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), FString("r.CustomDepth 3"));
+```
+and add the following code below:
+```
+    //set up for better resolution
+    UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), FString("t.MaxFPS 80"));
+    UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), FString("r.ScreenPercentage 200"));
+    UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), FString("r.Streaming.PoolSize 2000"));
+    UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), FString("r.ShadowQuality 2"));
+    UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), FString("r.OneFrameThreadLag 0"));
+    UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), FString("r.MipMapLODBias -2"));
+    UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), FString("r.ViewDistanceScale 4"));
+```
