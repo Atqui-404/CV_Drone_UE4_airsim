@@ -19,8 +19,8 @@ Ensure that you've downloaded Unreal 4.27
    Duplicate the BP_FlyingPawn and rename it
    Go into the renamed bp and replace the drone with your imported drone and then replace the propellers
    -> if the propeller pivot is not correct, go to the propeller asset and adjust using top view
-   Place the propellers nicely
-   go settings.json and add
+   Place the propellers nicely.
+   Head to settings.json and add
 ```
    "PawnPaths":{
     "DefaultQuadrotor": {"PawnBP": "Class'/Airsim/Blueprints/BP_MyPawn.BP_MyPawn_C'"}
