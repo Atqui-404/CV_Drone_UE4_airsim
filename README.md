@@ -24,7 +24,7 @@ Ensure that you've downloaded Unreal 4.27
    Fit the propellers nicely on the pivot points of the drone.
 
    **Method 2:**
-   You can also try to add BP_MyPawn.uasset immediately to *project_name\Plugins\AirSim\Content\Blueprints* and hopefully everything would be inside already if you're using the Mavic 2 Pro.
+   If you're using the Mavic 2 Pro, you can try to add BP_MyPawn.uasset immediately to *project_name\Plugins\AirSim\Content\Blueprints* and hopefully everything would be inside already otherwise pls go back to method 1.
    
    Head to settings.json and add
 ```
