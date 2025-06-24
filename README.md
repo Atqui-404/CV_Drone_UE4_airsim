@@ -50,3 +50,6 @@ Ensure that you've downloaded Unreal 4.27
     UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), FString("r.MipMapLODBias -2"));
     UKismetSystemLibrary::ExecuteConsoleCommand(GetWorld(), FString("r.ViewDistanceScale 4"));
 ```
+
+# How to Run
+View this demonstration on how to run the simulator: https://drive.google.com/file/d/131emWFGXbcBOnIILi92xgsu8BX166k-I/view?usp=drive_link
