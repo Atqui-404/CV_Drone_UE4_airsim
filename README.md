@@ -23,10 +23,10 @@ Ensure that you've downloaded Unreal 4.27
    Go into the renamed bp and replace the drone with your imported drone and then replace the propellers
    -> if the propeller pivot is not correct, go to the propeller asset and adjust using top view. *(For the Drone_prop.fbx, it was translated to X: -42, Y: -32, Z: -22)*
 
-Fit the propellers nicely on top of the drone for each propeller used.
+   Fit the propellers nicely on top of the drone for each propeller used.
 
    **Method 2:**
-   If you're using the Mavic 2 Pro, you can try to add BP_MyPawn.uasset immediately to *project_name\Plugins\AirSim\Content\Blueprints* and hopefully everything would be inside already otherwise pls go back to method 1.
+   If you're using the Mavic 2 Pro, you can try to add BP_MyPawn.uasset immediately to *project_name\Plugins\AirSim\Content\Blueprints* and hopefully everything would be inside already otherwise pls go back to      method 1.
    
    Head to settings.json and add
 ```
