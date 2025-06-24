@@ -12,14 +12,20 @@ This setup integrates with QGroundControl for mission planning and real-time tel
 # Requirements
 Ensure that you've downloaded Unreal 4.27
 # Setup
-0. Download your environment from Unreal market
+0. Download your environment from Unreal market (the one I used is City Park Environment Collection by SilverTM) and click 'create project' in Epic Games Launcher under library > FAB library > *environment*
 1. Follow mattquinoa's tutorial using the environment you downloaded.
    If there's an error in vs studio when trying to build, do make the project a start-up project, this will fix the error.
-2. Download the Drone_prop.fbx and Drone FBX.fbx or your desired drone model seperated as propellers and the drone(except propellers)
-   Duplicate the BP_FlyingPawn and rename it
+2. Download the Drone_prop.fbx and Drone FBX.fbx or your desired drone model seperated as propellers and the drone(except propellers) and add it into *project_name\Plugins\AirSim\Content\Blueprints* in the          Unreal project. You may need to adjust the directions or resize them when importing.
+
+   **Method 1:**
+   Duplicate the BP_FlyingPawn and rename it.
    Go into the renamed bp and replace the drone with your imported drone and then replace the propellers
-   -> if the propeller pivot is not correct, go to the propeller asset and adjust using top view
-   Place the propellers nicely.
+   -> if the propeller pivot is not correct, go to the propeller asset and adjust using top view. 
+   Fit the propellers nicely on the pivot points of the drone.
+
+   **Method 2:**
+   You can also try to add BP_MyPawn.uasset immediately to *project_name\Plugins\AirSim\Content\Blueprints* and hopefully everything would be inside already if you're using the Mavic 2 Pro.
+   
    Head to settings.json and add
 ```
    "PawnPaths":{
