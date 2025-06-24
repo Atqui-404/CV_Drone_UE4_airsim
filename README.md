@@ -15,7 +15,8 @@ Ensure that you've downloaded Unreal 4.27
 0. Download your environment from Unreal market (the one I used is City Park Environment Collection by SilverTM) and click 'create project' in Epic Games Launcher under library > FAB library > *environment*
 1. Follow mattquinoa's tutorial using the environment you downloaded.
    If there's an error in vs studio when trying to build, do make the project a start-up project, this will fix the error.
-2. Download the Drone_prop.fbx and Drone FBX.fbx or your desired drone model seperated as propellers and the drone(except propellers) and add it into *project_name\Plugins\AirSim\Content\Blueprints* in the          Unreal project. You may need to adjust the directions or resize them when importing.
+2. Download the Drone_prop.fbx and Drone FBX.fbx or your desired drone model seperated as propellers and the drone(except propellers) and import it into *project_name\Plugins\AirSim\Content\Blueprints* in the       Unreal project at the same time. You may need to adjust the directions or resize them when importing.
+   **Do scale the drone body to about 100 x 100 x smth. For the fbx files in this page, both were uniformly scaled by x3 and drone body was orientated by -90 in the Z-axis** 
 
    **Method 1:**
    Duplicate the BP_FlyingPawn and rename it.
