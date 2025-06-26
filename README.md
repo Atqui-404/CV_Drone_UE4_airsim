@@ -53,3 +53,20 @@ Ensure that you've downloaded Unreal 4.27
 
 # How to Run
 View this demonstration on how to run the simulator: https://drive.google.com/file/d/131emWFGXbcBOnIILi92xgsu8BX166k-I/view?usp=drive_link
+
+# How to annotate
+Use CVAT annotator to annotate the simulator videos you have from this link: https://docs.cvat.ai/docs/manual/basics/track-mode-basics/ 
+
+Step 1: Create a project
+
+Step 2: Under 'Constructor', you can input the label 'drone' and click the 'continue' button under it. You will see the label disappear but not to worry.
+
+Step 3: Click 'Submit & Open' to create the project and open it immediately. If you accidentally went out of it, just click under 'projects' and you've find your desired project there.
+
+Step 4: Click the '+' button to create a new task
+
+Step 5: Upload the video you want to annotate. Go to advanced configurations and change the 'Image Quality' to **100%** from 70%
+
+Step 6: Open the task and on the side bar on the left, you'll see a rectangle button. Select that 'rectangle' and click drawing method 'by 2 points' followed by 'Track'
+
+Step 7.1: If the drone happens to be blocked by something, Click 'switch outside property' on the right side of the screen at the label. Repeat step 6.
